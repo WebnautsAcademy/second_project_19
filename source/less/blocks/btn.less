@@ -10,6 +10,11 @@
     text-transform: uppercase;
     cursor: pointer;
     font-family: @bebasNeueRegular;
+    &:hover {
+        transition: .2s;
+        color: @main_text_color;
+        background-color:@sub_main_color;
+    }
     &__header {
         // padding-top: 23px 54px 18px 54px;
         width: 263px;
@@ -20,9 +25,13 @@
         width: 85px;
         height: 85px;
         background-color: transparent;
-        border-color: #fff;
+        border-color: @main_text_color;
         &:last-child {
             margin-left: 30px;
+        }
+        &:active{
+            background: transparent;
+            color:@sub_main_color ;
         }
     }
 

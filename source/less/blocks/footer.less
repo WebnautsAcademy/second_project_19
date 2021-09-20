@@ -34,12 +34,11 @@
             height: 43px;
             padding-left: 80px;
         }
-        &--active a{
+        &:hover .footer__link{
             .border();
-            padding: 20px 35px 4px;
             color: @sub_main_color;
         }
-        &--active::after {
+        &:hover::after {
             content: url(/images/arrow_active.svg);
             width: 43px;
             height: 43px;
@@ -49,13 +48,14 @@
     &__link {
         text-decoration: none;
         color: @main_text_color;
+        padding: 20px 35px 4px;
+        box-sizing: border-box;
     }
     &__icon {
         position: absolute;
         left: -60px;
         top: -20px;
         z-index: -1;
-        
     }
 
 }
