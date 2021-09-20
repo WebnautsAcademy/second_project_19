@@ -1,0 +1,37 @@
+.header {
+    .container();
+    &__wrapper{
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+        padding-top: 24px;
+        padding-bottom: 139px;
+        width: 100%;
+    }
+    &__btn {
+        padding: 23px 43px 18px 42px;
+    }
+    &__mobile--btn {
+        display: none;
+        border: none;
+        background-color: transparent;
+    }
+    &__logo-close {
+        display: block;
+    }
+}
+
+@media screen and (max-width: 375px){
+    .header {
+        &__mobile--btn {
+            display: block;
+        }
+
+        &__logo--close {
+            display: none;
+        }
+        &__wrapper {
+            padding-bottom: 50px;
+        }
+    }
+}
