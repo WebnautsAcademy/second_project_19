@@ -12,18 +12,13 @@
 		<div class="header__wrapper">
 			<div class="header__logo logo">
 				<a href="#" class="logo__link">
-					<img src="/images/logo.png" style="width: 46px; height: 19px;" alt="logo">
+					<img src="/images/logo.png" width= "46" height="19" alt="logo">
 				</a>
 				<button class="logo__switcher">
 					<svg width="24" height="24" viewBox="0 0 24 24">
 						<use xlink:href="/images/sprite.svg#day_mode"></use>
 					</svg>
 				</button>
-				<!-- <button class="logo__switcher--dark">
-					<svg width="24" height="24" viewBox="0 0 24 24">
-						<use xlink:href="/images/sprite.svg#day_mode"></use>
-					</svg>
-				</button> -->
 				<button class="header__mobile--btn">
 					<svg width="46" height="46" viewBox="0 0 46 46">
 						<use xlink:href="/images/sprite.svg#burger"></use>
@@ -35,7 +30,6 @@
 					<svg width="24" height="24" viewBox="0 0 24 24">
 						<use xlink:href="/images/sprite.svg#close_btn"></use>
 					</svg>
-					<!-- <img src="./images/close_btn.svg" height="24" width="24" alt=""> -->
 				</button>
 				<ul class="navigation__list">
 					<li class="navigation__item"><a href="#" class="navigation__link">Обо мне</a></li>
@@ -57,7 +51,7 @@
 			<div class="main__item">
 				<picture>
 					<source media="(max-width: 768px)" srcset="/images/main_bg@2x.png 2x"/>
-					<img  src="/images/main_bg.png"  alt="#" width="615" height= "577" class="main__bg">	
+					<img  srcset="/images/main_bg.png 1x"  alt="#" width="615" height= "577" class="main__bg">	
 				</picture>
 			</div>
 		</section>
@@ -67,7 +61,7 @@
 				<h2 class="about__title title">Обо мне</h2>
 				<picture>
 					<source media="(max-width: 768px)" srcset="/images/about_small@2x.png 2x"/>
-					<img class="about__img about__img--small" src="/images/about_small.png" alt="#" width= "287" height="331" >
+					<img class="about__img about__img--small" srcset="/images/about_small.png 1x" alt="#" width= "287" height="331" >
 				</picture>
 			</div>
 			<div class="about__item">
@@ -77,8 +71,7 @@
 				<div class="about__box">
 					<picture>
 						<source media="(max-width: 768px)" srcset="/images/about_big@2x.png 2x"/>
-						<!-- <source media="(max-width:425px)" srcset="/images/about_big@wx.png " /> -->
-						<img class="about__img about__img--big" src="/images/about_big.png" width="615" height="396" alt="#" >
+						<img class="about__img about__img--big" srcset="/images/about_big.png 1x" width="615" height="396" alt="#" >
 					</picture>
 					
 					<button class="btn btn--watch">Смотреть</button>
@@ -127,36 +120,6 @@
 			</div>
 		</section>
 		<hr class="main__line">
-		<!-- <section class="project">
-			<div class="project__box">
-				<h2 class="nice-title nice-title--mod">Webnauts</h2>
-				<div class="project__btn-wrapper">
-					<button class="btn btn--round">Назад</button>
-					<button class="btn btn--round">Дальше</button>
-				</div>
-			</div>
-			
-		</section> -->
-		<!-- <section class="project">
-			<div class="project__box">
-				<h2 class="nice-title nice-title--mod">Webnauts</h2>
-				<div class="project__btn-wrapper">
-					<button class="btn btn--round">Назад</button>
-					<button class="btn btn--round">Дальше</button>
-				</div>
-			</div>
-			
-		</section> -->
-		<!-- <section class="project">
-			<div class="project__box">
-				<h2 class="nice-title nice-title--mod">Webnauts</h2>
-				<div class="project__btn-wrapper">
-					<button class="btn btn--round">Назад</button>
-					<button class="btn btn--round">Дальше</button>
-				</div>
-			</div>
-			
-		</section> -->
 		<section class="project project__swiper">
 			<div class="project__box">
 				<h2 class="nice-title nice-title--mod">Webnauts</h2>
@@ -187,7 +150,7 @@
 					</div>
 					<picture class="project__img">
 						<source media="(max-width: 768px)" srcset="/images/project_bg@2x.png 2x"/>
-						<img src="/images/project_bg.png" width= "615" height= "671" alt="about-proj-bg">
+						<img srcset="/images/project_bg.png 1x" width= "615" height= "671" alt="about-proj-bg">
 					</picture>
 					
 				</div>
@@ -246,7 +209,7 @@
 						</div>
 						<picture class="project__img">
 							<source media="(max-width: 768px)" srcset="/images/sub_bg@2x.png 2x"/>
-							<img src="/images/sub_bg.png" width= "615" height= "416" alt="sub_bg">
+							<img srcset="/images/sub_bg.png 1x" width= "615" height= "416" alt="sub_bg">
 						</picture>
 					</div>
 					<div class="swiper swiper__sub">
@@ -254,13 +217,13 @@
 							<div class="swiper-slide">
 								<picture class="slide__img">
 									<source media="(max-width: 768px)" srcset="/images/sub_img@2x.png 2x"/>
-									<img src="/images/sub_img.png" width= "292" height= "200" alt="sub_img">
+									<img srcset="/images/sub_img.png 1x" width= "292" height= "200" alt="sub_img">
 								</picture>
 							</div>
 							<div class="swiper-slide">
 								<picture class="slide__img">
 									<source media="(max-width: 768px)" srcset="/images/sub_img2@2x.png 2x"/>
-									<img src="/images/sub_img2.png" width= "292" height= "200" alt="sub_img2">
+									<img srcset="/images/sub_img2.png 1x" width= "292" height= "200" alt="sub_img2">
 								</picture>
 							</div>
 						</div>
@@ -280,29 +243,29 @@
 						</div>
 						<picture class="project__pic">
 							<source media="(max-width: 768px)" srcset="/images/slide_img1@2x.png 2x"/>
-							<img src="/images/slide_img1.png" width= "286" height= "265" alt="slide">
+							<img srcset="/images/slide_img1.png 1x" width= "286" height= "265" alt="slide">
 						</picture>
 						<picture class="project__pic">
 							<source media="(max-width: 768px)" srcset="/images/slide_img2@2x.png 2x"/>
-							<img src="/images/slide_img2.png" width= "299" height= "210" alt="slide">
+							<img srcset="/images/slide_img2.png 1x" width= "299" height= "210" alt="slide">
 						</picture>
 					</div>
 					<div class="project__image_box">
 						<picture class="project__pic">
 							<source media="(max-width: 768px)" srcset="/images/slide_img3@2x.png 2x"/>
-							<img src="/images/slide_img3.png" width= "250" height= "275" alt="slide">
+							<img srcset="/images/slide_img3.png 1x" width= "250" height= "275" alt="slide">
 						</picture>
 						<picture class="project__pic">
 							<source media="(max-width: 768px)" srcset="/images/slide_img4@2x.png 2x"/>
-							<img src="/images/slide_img4.png" width= "275" height= "253" alt="slide">
+							<img srcset="/images/slide_img4.png 1x" width= "275" height= "253" alt="slide">
 						</picture>
 						<picture class="project__pic">
 							<source media="(max-width: 768px)" srcset="/images/slide_img5@2x.png 2x"/>
-							<img src="/images/slide_img5.png" width= "285" height= "229" alt="slide">
+							<img srcset="/images/slide_img5.png 1x" width= "285" height= "229" alt="slide">
 						</picture>
 						<picture class="project__pic">
 							<source media="(max-width: 768px)" srcset="/images/slide_img6@2x.png 2x"/>
-							<img src="/images/slide_img6.png" width= "299" height= "241" alt="slide">
+							<img srcset="/images/slide_img6.png 1x" width= "299" height= "241" alt="slide">
 						</picture>
 					</div>
 				</div>
@@ -317,7 +280,7 @@
 				<div class="another__box_item">
 					<picture>
 						<source media="(max-width: 768px)" srcset="/images/another_bg@2x.png 2x"/>
-						<img class="another__bg" src="/images/another_bg.png" width="282" height="113" alt="#" >
+						<img class="another__bg" srcset="/images/another_bg.png 1x" width="282" height="113" alt="#" >
 					</picture>
 					<span class="another__num">01</span>
 				</div>
@@ -340,7 +303,7 @@
 						отзыв</button>
 					<picture>
 						<source media="(max-width: 768px)" srcset="/images/smith@2x.png 2x"/>
-						<img class="review__img" src="/images/smith.png" style="width: 615px; height: 346px;" alt="smith">
+						<img class="review__img" srcset="/images/smith.png 1x" width = "615" height = "346" alt="smith">
 					</picture>
 					<h4 class="review__subtitle">Уилл Смит</h4>
 					<p class="review__text">Актер, певец, классный мужик</p>
@@ -348,7 +311,7 @@
 				<div class="review__video review__video--medium">
 					<picture>
 						<source media="(max-width: 768px)" srcset="/images/caesar@2x.png 2x"/>
-						<img class="review__img" src="/images/caesar.png" style="width: 292px; height: 227px;"  alt="ceaser">
+						<img class="review__img" srcset="/images/caesar.png 1x" width = "292" height="227" alt="ceaser">
 					</picture>
 					<h4 class="review__subtitle">Марк Аврелий</h4>
 					<p class="review__text">Римский император, философ</p>
@@ -356,7 +319,7 @@
 				<div class="review__video review__video--small">
 					<picture>
 						<source media="(max-width: 768px)" srcset="/images/vanya@2x.png 2x"/>
-						<img class="review__img" src="/images/vanya.png"style="width: 232px; height: 181px;"  alt="vanya">
+						<img class="review__img" srcset="/images/vanya.png 1x" width="232" height="181"  alt="vanya">
 					</picture>
 					<h4 class="review__subtitle">Дядя Ваня</h4>
 					<p class="review__text">Обувщик</p>
