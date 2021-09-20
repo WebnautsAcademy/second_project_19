@@ -1,0 +1,42 @@
+.review {
+    &__box {
+        display: flex;
+        justify-content: space-between;
+        justify-content: center;
+        align-items: flex-end;
+    }
+    
+    &__title {
+        margin-bottom: 80px;
+    }
+    &__subtitle {
+        font-size:@list_font_size;
+    }
+    &__text {
+        color: @grey_color;
+    }
+    &__video {
+        position: relative;
+        margin-right: 30px;
+        
+        &::after{
+            content: url(/images/play_img.svg);
+            position: absolute;
+            width: 36px;
+            height: 36px;
+            top: 31%;
+            left: 48%;
+        }
+       
+        &--large {
+            position: relative;
+        }
+        &:last-child{
+            margin-right: 0;
+        }
+    }
+
+    &__img {
+        margin-bottom: 16px;
+    }
+}

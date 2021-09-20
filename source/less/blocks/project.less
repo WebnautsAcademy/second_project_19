@@ -1,0 +1,109 @@
+.project {
+    // .container();
+
+    &__box {
+        position: relative;
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+        margin-bottom: 66px;
+    }
+    &__image_box {
+        display: flex;
+        justify-content: space-between;
+        width: 100%;
+    }
+    &__last_slide{
+        flex-direction: column;
+        width: 100%;
+    }
+    &__table {
+        flex-basis: 50%;
+    }
+    &__content{
+        display: flex;
+        justify-content: space-between;
+        align-items: flex-start;
+        &>* {
+            flex-basis: 33%;
+        }
+        &--box {
+            display: flex;
+            justify-content: space-between;
+            flex-direction: row;
+            width: 100%;
+            &>*{
+                flex-basis: 25%;
+            }
+        }
+
+    }
+
+    &__img {
+        flex-basis: 60%;
+    }
+    &__inner {
+        width: 100%;
+        max-width: 245px;
+    }
+
+    &__title {
+        margin-bottom: 65px;
+    }
+
+    &__num {
+        position: relative;
+    }
+
+    &__link {
+        position: relative;
+        text-decoration: none;
+        padding-left: 30px;
+        
+        &--text{
+            color: #fff;
+            border-bottom: 1px solid #C4C4C4;
+        }
+    }
+
+    &__picture {
+        position: absolute;
+        left: 0;
+        top: -3px;
+    }
+    
+
+    &__text {
+        margin-bottom: 50px;
+    }
+    &__elem {
+        font-family: @bebasNeueBold;
+        color: #828282;
+
+        &--first {
+            font-size:@title_size_l;
+            line-height: @title_size_l;
+
+            &::after{
+                content: '';
+                position: absolute;
+                display: block;
+                width: 189.5px;
+                border: 1px solid #828282;
+                transform: rotate(-45deg);
+                top: 130px;
+                left: 0;
+            }
+        }
+
+        &--second {
+            position: absolute;
+            font-size: 48px;
+            line-height: 48px;
+            color: @sub_text_color;
+            // bottom: -64px;
+            top: 160px;
+            right: 130px;
+        }
+    }
+}

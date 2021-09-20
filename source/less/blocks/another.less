@@ -1,0 +1,30 @@
+.another {
+    display: flex;
+    justify-content: space-between;
+    align-items: flex-start;
+    &>* {
+        flex-basis: 50%;
+    }
+    &__box {
+        display: flex;
+        flex-direction: column;
+        &_item {
+            display: flex;
+            justify-content: space-between;
+        }
+        &_item:last-child{
+            margin-top: 65px;
+            justify-content: flex-start;
+        }
+    }
+
+    &__num {
+        font-family: @bebasNeueBold;
+        font-size: 96px;
+        line-height: 96px;
+        color: @sub_text_color;
+    }
+    &__text {
+        margin-top: 40px;
+    }
+}

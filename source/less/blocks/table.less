@@ -1,0 +1,26 @@
+.table {
+    display: grid;
+    flex-basis: 60%;
+    grid-template-columns: 1fr 1fr;
+    grid-template-rows: 1fr 1fr 1fr;
+    // gap: 20px;
+    
+    &__item {
+        border: 1px solid @sub_text_color;
+        padding: 25px 30px;
+        
+        &:hover {
+            border-color: @sub_main_color;
+        }
+    }
+
+    &__num {
+        font-family: @bebasNeueBold;
+        font-size: 100px;
+        line-height: 100px;
+    }
+
+    &__text {
+        margin-top: 42px;
+    }
+}
