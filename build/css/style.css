@@ -38,6 +38,9 @@ h3 {
   font-size: 36px;
   line-height: 43.2px;
 }
+.active {
+  display: block;
+}
 *,
 *::before,
 *::after {
@@ -429,7 +432,13 @@ img {
   font-size: 16px;
   color: #fff;
   padding-top: 24px;
+  display: block;
+}
+.specialization__text--hidden {
   display: none;
+}
+.specialization__item--active::after {
+  background-image: url(/images/list_arr_active.svg);
 }
 @media screen and (max-width: 425px) {
   .specialization {
